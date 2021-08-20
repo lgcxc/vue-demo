@@ -1,4 +1,4 @@
-<template functional>
+<template>
   <div class="user-profile">{{name}}</div>
 </template>
 <script>

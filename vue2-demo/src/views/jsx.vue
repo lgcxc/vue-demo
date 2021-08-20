@@ -1,15 +1,9 @@
-<template>
-  <div>
-    <UserProfile v-for='item in list' :key='item' :name='item' />
-  </div>
-</template>
-
 <script>
-import UserProfile from '../components/UserProfile'
+import { myRender, } from '../libs/index'
 
 export default {
-  name: 'Home',
-  components: { UserProfile },
+  name: 'Jsx',
+  components: {},
   data () {
     return {
       list: Array(5000)
@@ -22,6 +16,9 @@ export default {
   },
   mounted () {
     console.log('用时:', Date.now() - this.start)
+  },
+  render: function(h) {
+    return myRender(h, this)
   }
 }
 </script>

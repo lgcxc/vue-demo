@@ -3,7 +3,7 @@
 </template>
 <script>
 export default {
-  functional: true,
+  // functional: true,
   props: [ 'name' ],
   data () {
     return {}
